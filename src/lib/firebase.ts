@@ -1,9 +1,9 @@
 "use client";
 
 // Import only what you need from firebase
-import { initializeApp, getApps } from 'firebase/app';
-import { getFirestore } from 'firebase/firestore';
-import { getStorage } from 'firebase/storage';
+import { getApps, initializeApp } from '@firebase/app';
+import { getFirestore } from '@firebase/firestore';
+import { getStorage } from '@firebase/storage';
 
 const firebaseConfig = {
   apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,

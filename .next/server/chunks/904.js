@@ -1,0 +1,1 @@
+"use strict";exports.id=904,exports.ids=[904],exports.modules={1904:(e,t,o)=>{o.r(t),o.d(t,{$$typeof:()=>d,__esModule:()=>r,default:()=>i});let s=(0,o(6843).createProxy)(String.raw`/Users/stallin/Documents/GitHub/lovebook/src/components/editor/BookEditor.tsx`),{__esModule:r,$$typeof:d}=s,i=s.default}};

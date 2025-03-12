@@ -1,6 +1,10 @@
 {
-  "/not-found": "app/not-found.js",
+  "/_not-found": "app/_not-found.js",
   "/create/cover/page": "app/create/cover/page.js",
   "/create/page": "app/create/page.js",
+  "/cart/page": "app/cart/page.js",
+  "/create/editor/page": "app/create/editor/page.js",
+  "/editor/page": "app/editor/page.js",
+  "/pricing/page": "app/pricing/page.js",
   "/page": "app/page.js"
 }
