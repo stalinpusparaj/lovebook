@@ -12,7 +12,7 @@ import {
   orderBy,
 } from 'firebase/firestore';
 
-export interface Book {
+export type Book = {
   id?: string;
   userId: string;
   title: string;
@@ -24,37 +24,22 @@ export interface Book {
   }>;
   createdAt: Date;
   updatedAt: Date;
-}
+};
 
 // Create a new book
-export async function createBook(book: Omit<Book, 'id'>) {
-  try {
-    const docRef = await addDoc(collection(db, 'books'), {
-      ...book,
-      createdAt: new Date(),
-      updatedAt: new Date(),
-    });
-    return { id: docRef.id, ...book };
-  } catch (error) {
-    console.error('Error creating book:', error);
-    throw error;
-  }
-}
+export const createBook = async (bookData: Omit<Book, 'id'>) => {
+  return addDoc(collection(db, 'books'), bookData);
+};
 
 // Get a book by ID
-export async function getBook(bookId: string) {
-  try {
-    const docRef = doc(db, 'books', bookId);
-    const docSnap = await getDoc(docRef);
-    if (docSnap.exists()) {
-      return { id: docSnap.id, ...docSnap.data() } as Book;
-    }
-    return null;
-  } catch (error) {
-    console.error('Error getting book:', error);
-    throw error;
+export const getBook = async (id: string) => {
+  const bookRef = doc(db, 'books', id);
+  const bookSnap = await getDoc(bookRef);
+  if (bookSnap.exists()) {
+    return { id: bookSnap.id, ...bookSnap.data() } as Book;
   }
-}
+  return null;
+};
 
 // Get all books for a user
 export async function getUserBooks(userId: string) {
@@ -73,19 +58,10 @@ export async function getUserBooks(userId: string) {
 }
 
 // Update a book
-export async function updateBook(bookId: string, data: Partial<Book>) {
-  try {
-    const docRef = doc(db, 'books', bookId);
-    await updateDoc(docRef, {
-      ...data,
-      updatedAt: new Date(),
-    });
-    return true;
-  } catch (error) {
-    console.error('Error updating book:', error);
-    throw error;
-  }
-}
+export const updateBook = async (id: string, bookData: Partial<Book>) => {
+  const bookRef = doc(db, 'books', id);
+  return updateDoc(bookRef, bookData);
+};
 
 // Delete a book
 export async function deleteBook(bookId: string) {
