@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <!-- Long Straight Hair -->
+  <path 
+    d="M30 35 
+       C 35 30, 45 28, 50 28
+       C 55 28, 65 30, 70 35
+       L 72 60
+       C 65 58, 60 62, 55 60
+       L 53 65
+       C 52 67, 48 67, 47 65
+       L 45 60
+       C 40 62, 35 58, 28 60
+       Z" 
+    fill="currentColor"
+  />
+</svg> 

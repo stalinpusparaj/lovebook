@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="120" height="40" viewBox="0 0 120 40" xmlns="http://www.w3.org/2000/svg">
+  <g fill="none" fill-rule="evenodd">
+    <path d="M10,20 C10,14.477 14.477,10 20,10 C25.523,10 30,14.477 30,20 C30,25.523 25.523,30 20,30 C14.477,30 10,25.523 10,20" fill="#E53E3E"/>
+    <path d="M35,20 L85,20" stroke="#1A202C" stroke-width="2"/>
+    <text x="40" y="25" font-family="Arial" font-size="16" fill="#1A202C">LoveBook</text>
+  </g>
+</svg> 

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="100" cy="70" r="40" fill="#FFD7D7"/>
+  <circle cx="100" cy="70" r="35" fill="#FFF"/>
+  <circle cx="85" cy="65" r="5" fill="#000"/>
+  <circle cx="115" cy="65" r="5" fill="#000"/>
+  <path d="M90,80 Q100,90 110,80" stroke="#000" stroke-width="2" fill="none"/>
+  <rect x="60" y="120" width="80" height="60" fill="#E53E3E"/>
+  <text x="100" y="190" font-family="Arial" font-size="12" fill="#1A202C" text-anchor="middle">Create Character</text>
+</svg> 

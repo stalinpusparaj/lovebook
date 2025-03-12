@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="500" height="600" viewBox="0 0 500 600" xmlns="http://www.w3.org/2000/svg">
+  <rect width="500" height="600" fill="#FEE2E2"/>
+  <rect x="50" y="50" width="400" height="500" fill="#FFFFFF" stroke="#E53E3E" stroke-width="4"/>
+  <circle cx="250" cy="200" r="100" fill="#E53E3E"/>
+  <text x="250" y="350" font-family="Arial" font-size="32" fill="#1A202C" text-anchor="middle">Your Love Story</text>
+  <text x="250" y="400" font-family="Arial" font-size="24" fill="#4B5563" text-anchor="middle">Personalized Just For You</text>
+  <path d="M200,150 Q250,200 300,150" stroke="#FFFFFF" stroke-width="8" fill="none"/>
+</svg> 
